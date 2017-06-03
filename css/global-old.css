@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	 font-family: 'Raleway', sans-serif;
+}
+
+.feature-list10 {
+  padding: 0;
+  margin: 0 0 30px;
+}
+.feature-list10 li {
+  list-style: none;
+  clear:both;
+}
+
+.feature-list10 li span {
+  display: inline-block;
+  float: left;
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: #e74c3c;
+  text-align: center;
+  margin-bottom:10px;
+}
+.feature-list10 li span i {
+  color: #ffffff;
+  font-size: 80px;
+  line-height: 150px;
+}
+
+.feature-list10 li span img {
+  padding-top:7px;
+}
+
+
+.feature-list10 li .list-cont {
+  margin-left: 180px;
+  padding-top: 50px;
+}
+.feature-list10 li .list-cont h3 {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: #3a3d41;
+}
+.feature-list10 li .list-cont p {
+  font-size: 13px;
+  color: #dddddd;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 0 24px;
+  color: #999999;
+}
+.feature-list10.white {
+  padding: 0;
+  margin: 0 0 30px;
+}
+.feature-list10.white li {
+  list-style: none;
+}
+.feature-list10.white li span {
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #ffffff;
+  text-align: center;
+}
+.feature-list10.white li span i {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 40px;
+}
+.feature-list10.white li .list-cont {
+  margin-left: 54px;
+  padding-top: 10px;
+}
+.feature-list10.white li .list-cont h3 {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: #ffffff;
+}
+.feature-list10.white li .list-cont p {
+  font-size: 13px;
+  color: #dddddd;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 0 24px;
+  color: #999999;
+}
+
+
+/*******Page Banner Images**********/
+
+.howitworks-page-banner {
+  background: url('../images/howitworks_ban.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.feature-page-banner {
+  background: url('../images/feature_ban.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.noBgImage {
+    background: none;
+   
+}
+
+
+
+/**********Login Box************/
+
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+/*.dropdown-submenu:hover>.dropdown-menu{display:block;}*/
+.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+.dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
+.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+.padding-left-ten-px { padding-left: 10px; }
+.red-text { color: #FF0000; }
+.twitter-blue { color: #1ec7fe; }
+.facebook-blue { color: #3c599f; }
+.linkedin-blue { color: #0080b2; }
+.navbar-right{padding-right: 25px;}
+.form-group{padding: 10px;}
+.form-panel-width { width: 220px; }/*YOU CAN MAKE PANEL AS WIDE AS NEEDED*/
+.color-blue {color: #0080c5;}
+.color-red {color: #FF0000;}
+.error-message {font-size: 10px;}
+
+@media screen and (min-width: 30em ) {
+  .form-panel-width { width: 100%; }
+}
+
+
+
+/****************************************/
+
+
+.features-bg1 {
+  background: url('../images/ban_7.jpg');
+  
+}
+
+.company-bg1 {
+  background: url('../images/ban_9.jpg');
+  
+}
+
+/*****************************************/
+
+footer .up-footer {
+   
+    padding: 10px 0 30px;
+}
+
+footer .up-footer .footer-line {
+    margin-top: 30px;
+    padding-top: -12px;
+    border-top: 1px solid #595c60;
+    text-align: center;
+}
+
+footer .social-section {
+    background: #e74c3c;
+    padding: 8px;
+    text-align: center;
+}

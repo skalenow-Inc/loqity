@@ -1,0 +1,184 @@
+<!doctype html>
+
+
+<html lang="en" class="no-js" ng-app="loqity">
+<head>
+<base href="/" />
+	<title>Loqity</title>
+	
+	
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300,100,200' rel='stylesheet' type='text/css'>
+
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">	
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" media="screen">
+<!--	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">-->
+ <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	
+   <link rel="stylesheet" type="text/css" href="css/global.css" media="screen">
+   			<!-- ANGULAR FILES -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+    <script src="angularscript.js"></script>
+	
+</head>
+
+
+
+
+<body>
+
+	<!-- Container -->
+	<div id="container">
+		<!-- Header
+		    ================================================== -->
+		<header class="clearfix" ng-controller="ctrl">
+			<!-- Static navbar -->
+			<div class="navbar navbar-default navbar-fixed-top">			
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img alt="" src="images/logo.png"></a>
+						
+					</div>
+					<div class="navbar-collapse collapse">
+
+					
+
+                    <ul id="signInDropdown" class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-danger navbar-btn dropdown-toggle "><i class="fa fa-user" aria-hidden="true"></i> Login <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li style="width:300px;">
+                                <form class="navbar-form form" role="form">
+                                   
+                                   
+
+                                  
+                                   
+                                </form>
+
+
+
+                                	<form id="toploginuser" class="navbar-form form loginbox" name="toploginuser" action="" method="post" style="padding:12px;"> 
+				<label class="showmsg">Login</label> 
+				<div class="m_loginbox">
+				<input name="email" id="email" type="email" placeholder="Email address" value="ram@skalenow.com" required="" class="required email" style="width:100%;">
+				</div>
+				<div class="m_loginbox">
+				<input name="pwd" id="pwd" type="password" placeholder="Password" value="123456" required="" autocomplete="off" class="required">
+				</div>
+				<!-- <button type="button" id="btnLogin" class="btn">Login</button>
+ -->
+
+				 <div class="form-group">
+                                        <!--BUTTON-->
+                                        <button type="submit" class="btn btn-warning form-control" onclick="window.location='static';">Login</button> &nbsp;
+                                       <button type="button" id="dropdownMenu2" class="btn btn-primary form-control navbar-btn dropdown-toggle">
+                     Login with Facebook&nbsp; <i class="fa fa-facebook-official" aria-hidden="true" style="font-size:12pt;"></i> </button>
+                                        	
+                                        	<a href="#" title="Fast and free sign up!" id="btnNewUser" class="collapsed anchortext">New User? Sign-up</a>
+                                    </div>
+                                    <div class="form-group">
+                                        <!--RESET PASSWORD LINK-->
+                                        <span class="pull-left"><a href="#">Forgot Username or Password?</a></span>
+                                    </div>
+
+			</form>
+
+
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                    
+						<ul class="nav navbar-nav navbar-right">
+							
+							<li><a href="company">Company</a></li>
+							<li><a href="solution">Solutions</a></li>
+                            				<li><a href="features">Features</a></li>
+                            				<li><a href="platform">Platform</a></li>
+                            				<li><a href="howitworks">How It Works</a></li>
+                            				<li><a href="pricing">Pricing</a></li>
+                            
+						</ul>
+
+                   
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End Header -->
+		<div ng-view>
+			
+		</div>
+
+
+		<!-- footer 
+			================================================== -->
+		<footer>
+			<div class="social-section">
+				<ul class="social-icons triggerAnimation animated">
+					<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+				
+					<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+					
+				</ul>
+			</div>
+			<div class="up-footer">
+				<div class="container">
+					
+					<div class="footer-line">
+						<p>Copyright 2016. Loqity. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+		<!-- End footer -->
+	</div>
+	<!-- End Container -->
+
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.migrate.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.appear.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
+	<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/plugins-scroll.js"></script>
+	<script type="text/javascript" src="js/waypoint.min.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</body>
+</html>

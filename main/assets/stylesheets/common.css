@@ -1,0 +1,421 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*.sidebar-left {
+    background: #433d3c;
+    box-shadow: -5px 0 0 #2f3139 inset;
+    color: #777777;
+    display: table-cell;
+    position: relative;
+    vertical-align: top;
+    width: 250px;
+    z-index: 1010;
+}*/
+
+
+body
+{
+  background-color: #fff;
+}
+
+		
+.sidebar-left1 .sidebar-header .sidebar-toggle:hover i {
+    color: #0088cc;
+}
+
+.sidebar-left1 .sidebar-header .sidebar-toggle {
+    /*position: absolute;*/
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 57px;
+    background-color: #f3993b;
+    /*border-radius: 0 0 0 5px;*/
+    text-align: center;
+    cursor: pointer;
+	/*margin-top:10px;
+	margin-left:15px;*/
+}
+
+.sidebar-left1 .sidebar-header .sidebar-toggle i {
+    color: #fff;
+    font-size: 17px;
+    /* font-size: 1.7rem; */
+    line-height: 60px;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+	
+}
+	
+
+
+
+@media only screen and (min-width: 768px)
+{
+html.fixed .page-header {
+    left: 250px; /*300px*/
+    margin: 0;
+    position: fixed;
+    right: 0;
+    top: 60px;
+}
+}
+
+.page-header {
+    background: #f6f5f3;
+    border-bottom: none;
+    border-left: 1px solid #3a3a3a;
+    box-shadow: 1px 3px 0 1px #cccccc;
+    height: 50px;
+    margin: -40px -40px 40px -40px;
+    padding: 0;
+}
+
+.page-header h2
+{
+	color: #666;
+}
+
+.head_txt1 {
+    color: #fb8a14;
+}
+
+
+/********Content********************/
+
+@media only screen and (min-width: 768px)
+{
+html.fixed .content-body {
+    margin-left: 250px;
+}
+}
+
+/*********Mobile Menu Icon***********/
+
+.header .toggle-sidebar-left {
+    background: #e06737;
+}
+
+/***********Collapsed Sidebar**************/
+
+@media only screen and (min-width: 768px) {
+    html.sidebar-left-collapsed .sidebar-left .nano {
+        background: #433d3c;
+        box-shadow: -5px 0 0 #2f3139 inset;
+    }
+}
+
+.label2
+{
+
+    font-size: 9pt;
+}
+
+.label2-bg
+{
+    background: #079025;
+}
+
+
+
+/*********Tabs1 Group Deals Page**********/
+
+
+
+.groupdeals .btn-default.active
+
+{
+  color: #fff;
+    background-color: #777373;
+    border-color: #adadad;
+}
+
+
+
+.groupdeals .tab-content {
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+    border: 0px solid #eeeeee;
+    border-top: 0;
+    padding: 15px;
+    padding-left: 0px;
+}
+
+
+
+
+
+.panel-body {
+    background: #f1f1f1;
+  }
+
+
+/**********Mobile Bg*****************/
+
+#mobileCanvas {
+    background-image: url("../images/mobile.png");
+    height: 530px;
+    margin-top: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+      width: 278px;
+      padding-top: 70px;
+    background-repeat: no-repeat;
+}
+
+#mobileCanvas .logo {
+    border-bottom: 1px solid #ec8b25;
+    padding-bottom: 14px;
+}
+
+
+#mobileCanvas .logo img {
+    max-width: 80%;
+}
+
+#mobileCanvas .previewTxt
+{
+
+     max-height: 288px;
+    overflow-y: hidden;
+    padding-bottom: 15px;
+    /*border-bottom: 3px solid #cccccc;*/
+
+}
+
+
+#mobileCanvas .previewTxt .DescImg-placeholder {
+    float: left;
+    margin-right: 10px;
+    margin-top:12px;
+    width: 80px;
+    height: 60px;
+    max-height: 90px;
+}
+
+#mobileCanvas .previewTxt .price
+{
+
+  font-size: 11pt;
+  font-weight: bold;
+  color: #f3993b;
+}
+
+
+
+/*************Coupon *********************/
+
+.DescImg-placeholder2
+{
+
+   float: left;
+    margin-right: 10px;
+    /*margin-top:12px;*/
+    margin-bottom: 10px;
+    width: auto;
+    height: 40px;
+    max-height: 90px;
+}
+
+.coupon-header-img
+{
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px dotted #ddd;
+}
+
+.coupon-detail-footer
+{
+  margin-bottom: 10px;
+  margin-top:  10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #eee;
+}
+
+
+/**********Select Box Width**************/
+
+.bootstrap-select.btn-group .dropdown-toggle .filter-option
+{
+
+    width: 95% !important;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li .media-body
+{
+
+  vertical-align: middle;
+}
+
+
+.bootstrap-select.btn-group .dropdown-menu li .media-object
+{
+
+  width: auto;
+  height: 30px;
+}
+
+
+/**********************End***************************/
+
+
+/***************File Upload Button*********************/
+
+.fileupload .btn
+{
+    background-color: #f3993b;
+    color: #fff;
+}
+
+
+
+/************Table My Logity*************/
+
+.mylogity_table table > tbody > tr > td
+{
+    vertical-align: middle !important;
+}
+
+
+
+/*******************Text Box Design******************/
+
+
+/*.textboxnew            { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+.textboxnew input               {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.textboxnew input:focus         { outline:none; }
+
+label                {
+  color:#999; 
+  font-size:14px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+
+.textboxnew input:focus ~ label, .textboxnew input:valid ~ label        {
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+
+.bar    { position:relative; display:block; width:300px; }
+.bar:before, .bar:after     {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+
+.textboxnew input:focus ~ .bar:before, .textboxnew input:focus ~ .bar:after {
+  width:50%;
+}
+
+
+.highlightnew {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+
+.textboxnew input:focus ~ .highlightnew {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+@-webkit-keyframes inputHighlighter {
+    from { background:#5264AE; }
+  to    { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+  to    { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#5264AE; }
+  to    { width:0; background:transparent; }
+}
+
+*/
+
+
+
+/* CSS for Credit Card Payment form */
+.credit-card-box .panel-title {
+    display: inline;
+    font-weight: bold;
+}
+.credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+.credit-card-box label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box .payment-errors {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box label {
+    display: block;
+}
+/* The old "center div vertically" hack */
+.credit-card-box .display-table {
+    display: table;
+    width: 100%;
+}
+.credit-card-box .display-tr {
+    display: table-row;
+}
+.credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+/* Just looks nicer */
+.credit-card-box .panel-heading img {
+    min-width: 180px;
+}
