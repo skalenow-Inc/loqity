@@ -25,7 +25,7 @@ SECRET_KEY = '#ulh%6op4@%n)s(vke70m&_&brl88l)lc4&sqs_bo@4vd1s#b4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 
@@ -150,3 +150,5 @@ SWAGGER_SETTINGS = {
         }
     },
 }
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
