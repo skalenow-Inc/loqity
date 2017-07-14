@@ -1,0 +1,102 @@
+<header class="header" ng-controller="appCtrl">
+   <div style="float:left;" class="sidebar-left1">
+      <div class="sidebar-header">
+         <div class="sidebar-toggle hidden-xs" id="collapse-nav" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+            <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+         </div>
+      </div>
+   </div>
+   <div class="logo-container">
+      <a href="index.html" class="logo">
+      <img src="assets/images/logo.png" />
+      </a>
+      <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+         <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+      </div>
+   </div>
+   <!-- start: search & user box -->
+   <div class="header-right">
+      <form class="search nav-form">
+         <div class="input-group input-search">
+            <input type="text" class="form-control"  placeholder="Search...">
+            <span class="input-group-btn">
+            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+            </span>
+         </div>
+      </form>
+      <span class="separator"></span>
+      <ul class="notifications">
+         <li>
+            <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+            <i class="fa fa-bell"></i>
+            <span class="badge">3</span>
+            </a>
+            <div class="dropdown-menu notification-menu">
+               <div class="notification-title">
+                  <span class="pull-right label label-default">3</span>
+                  Notifications
+               </div>
+               <div class="content">
+                  <ul>
+                     <li>
+                        <a href="#" class="clearfix">
+                           <div class="image">
+                              <i class="fa fa-thumbs-up bg-success"></i>
+                           </div>
+                           <span class="title">New Beacon Added</span>
+                           <span class="message">Just now</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="clearfix">
+                           <div class="image">
+                              <i class="fa fa-lock bg-warning"></i>
+                           </div>
+                           <span class="title">Cards Locked</span>
+                           <span class="message">15 minutes ago</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="clearfix">
+                           <div class="image">
+                              <i class="fa fa-user bg-danger" aria-hidden="true" ></i>
+                           </div>
+                           <span class="title">New Account Added</span>
+                           <span class="message">10/06/2016</span>
+                        </a>
+                     </li>
+                  </ul>
+                  <hr />
+                  <div class="text-right">
+                     <a href="#" class="view-more">View All</a>
+                  </div>
+               </div>
+            </div>
+         </li>
+      </ul>
+      <span class="separator"></span>
+      <div id="userbox" class="userbox">
+         <a href="#" data-toggle="dropdown">
+            <figure class="profile-picture">
+               <img ng-cloack ng-src="{{profile.display_picture}}" alt="{{profile.first_name}}" class="img-circle"  />
+            </figure>
+            <div class="profile-info" data-lock-name="{{profile.first_name}}" >
+               <span class="name">{{profile.first_name}}</span>
+            </div>
+            <i class="fa custom-caret"></i>
+         </a>
+         <div class="dropdown-menu">
+            <ul class="list-unstyled">
+               <li class="divider"></li>
+               <li>
+                  <a role="menuitem" tabindex="-1" href="account.html"><i class="fa fa-user"></i>Profile</a>
+               </li>
+               <li>
+                  <a role="menuitem" ng-click="logout()" tabindex="-1" href="#"><i class="fa fa-power-off"></i> Logout</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <!-- end: search & user box -->
+</header>

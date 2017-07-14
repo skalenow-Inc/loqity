@@ -1,4 +1,4 @@
-angular.module("loqity",['ngRoute','ngAnimate'])
+var app = angular.module("loqity",['ngRoute','ngAnimate','ngCookies'])
 .constant('config', {
 	apiUrl: 'http://127.0.0.1:8500/',
 	baseUrl: '/',
@@ -358,21 +358,26 @@ $('#mobile_noti').each(function () {
 	$scope.result=plugin.company();
 
 })
-.controller('loginCtrl',function($scope,$http,config,$window)
+.controller('loginCtrl',function($scope,$http,config,$window,$cookies)
 {
 	$scope.Login = {};
 	$scope.form_errors = false;
+	var d = new Date();
+	d.setDate(d.getDate()+30);
 	$scope.login = function(isValid)
 	{
 		console.log(this.Login);
-		$http.post(config.apiUrl+"login/",this.Login).then(function(result)
+		$http.post(config.apiUrl+"login",this.Login).then(function(result)
 		{
 			if(!result.data.status)
 			{
 				$scope.form_errors = true;
+				$scope.login_invalid = result.data.message;
 				$scope.login_errors = result.data.data;
 			}
-			else{
+			else
+			{
+				$cookies.put("access_token",result.data.token,{"expires":new Date(d)});
 				$window.location = "/main";
 			}
 		});
